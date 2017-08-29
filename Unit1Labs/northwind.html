@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Northwind</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- bootstrap stylesheet -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Content/font-awesome.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i> 
+                            Products <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.asp.net"><i class="fa fa-book" aria-hidden="true"></i> Browse Categories</a></li>
+                            <li><a href="http://www.w3schools.com"><i class="fa fa-search" aria-hidden="true"></i> Products Search</a></li>
+                            <li><a href="http://stackoverflo.com"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Current Discounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users" aria-hidden="true"></i>
+                        Customers <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.asp.net"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a></li>
+                            <li><a href="http://www.w3schools.com"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
+                            <li><a href="http://stackoverflo.com"><i class="fa fa-server" aria-hidden="true"></i> Your Account</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs"><input type="text" class="form-control navbar-btn pull-right"></li>
+                    <li class="hidden-xs"><button type="button" class="btn btn-default navbar-btn pull-right "><i class="fa fa-search" aria-hidden="true"></i></button></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="container">
+        <div class="jumbotron" style="border-style:solid; border-color:#808080; border-width: 2px;">
+            <h1 style="text-shadow: 2px 2px #ffffff, 2px 2px #000000;">N<i style="font-size: 75%;"class="fa fa-compass" aria-hidden="true"></i>rthwind</h1>
+            <p>
+                We have the best prices and selection of high quality foods & 
+                beverages on the planet! Check out our featured discounts below!
+            </p>
+            <button class="btn btn-info">Place Your Order Now  <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        
+        <div class="container">
+            <!-- Grid -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><a href="#">Tis the Seasoning</a></h3>
+                    <p>
+                        Order today! Save 12.5% on Chef Anton's Italian Seasoning. 
+                        You don't want to make Chef Anton mad, do you?
+                    </p>
+                    <i>Discount Expires: 12/14/2016</i><br /><br />
+                    <a href="#" style="text-decoration: none" data-toggle="popover"  data-content="BOGO123"><i class="fa fa-hand-o-right" aria-hidden="true"></i>Discount Code</a>
+                </div>
+                <div class="col-md-4">
+                    <h3><a href="#">Go Green</a></h3>
+                    <p>
+                        Genen Shouyu goes on sale very rarely.
+                        Order now to save 10% off our already low price.
+                    </p>
+                    <i>Discount Expires: 12/14/2016</i><br /><br />
+                    <a href="#" style="text-decoration: none" data-toggle="popover" data-content="BOGO123"><i class="fa fa-hand-o-right" aria-hidden="true"></i>Discount Code</a>
+                </div>
+                <div class="col-md-4">
+                    <h3><a href="#">Half Price</a></h3>
+                    <p>
+                        Just because you can't pronounce "Schoggi Schokolade" 
+                        doesn't mean you shouldn't buy it. Get it now for 50% off!
+                    </p>
+                    <i>Discount expires: 12/14/2016</i><br /><br />
+                    <a href="#" style="text-decoration: none" data-toggle="popover" data-content="BOGO123"><i class="fa fa-hand-o-right" aria-hidden="true"></i>Discount Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text"><i>&copy; 2016 Your Name</i></p>
+            <button type="button" class="btn btn-default navbar-btn pull-right">
+                Sign in
+            </button>
+        </div>
+    </nav>
+    <!-- jquery and bootstrap frameworks -->
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>

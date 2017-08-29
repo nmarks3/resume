@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- bootstrap stylesheet -->
+    <link href="Content/bootstrap-custom.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">MVC Man</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Links <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.asp.net">ASP.NET</a></li>
+                            <li><a href="http://www.w3schools.com">W3Schools</a></li>
+                            <li><a href="http://stackoverflo.com">Stack Overflow</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text"><i>&copy; 2016 Your Name</i></p>
+            <button type="button" class="btn btn-default navbar-btn pull-right">
+                Sign in
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>The MVC Source</h1>
+            <p>
+                This website is your resource for learning .NET MVC 5. You will find
+                lessons here to help you create robust, enterprise web applications using
+                one of the most exciting development platforms around.
+            </p>
+            <button class="btn btn-info">Start Now</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><a href="#">Create .NET MVC Project</a></h3>
+                    <p>
+                        This lesson is designed to show you how to create your first MVC 5
+                        project using Visual Studio 2013. In addition, you will start to
+                        become familiar with the IDE.
+                    </p>
+                    <button type="button" class="btn btn-default">Learn More</button>
+                </div>
+                <div class="col-md-4">
+                    <h3><a href="#">Publish MVC Site to Web</a></h3>
+                    <p>
+                        This lesson is designed to show you how to customize your web
+                        hosting
+                        settings using the Control Panel and publish an MVC project to your
+                        domain using isual Studio.
+                    </p>
+                    <button type="button" class="btn btn-default">Learn More</button>
+                </div>
+                <div class="col-md-4">
+                    <h3><a href="#">Twitter Bootstrap</a></h3>
+                    <p>
+                        This lesson is designed to show you how twitter bootstrap is
+                        integrated into .NET MVC 5. In addition, you will learn how to
+                        create a responsive navigation bar.
+                    </p>
+                    <button type="button" class="btn btn-default">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery and bootstrap frameworks -->
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>

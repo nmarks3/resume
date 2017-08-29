@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- bootstrap stylesheet -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/jquery-ui.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">MVC Man</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Links <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.asp.net">ASP.NET</a></li>
+                            <li><a href="http://www.w3schools.com">W3Schools</a></li>
+                            <li><a href="http://stackoverflo.com">Stack Overflow</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- content -->
+    <div class="container" style="min-width:480px;">
+        <h1>Happy Birthday!</h1><hr />
+        <form role="form">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Birthday</label>
+                        <input type="text" class="form-control" id="birthday"
+                               placeholder="Enter birthday">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Sticker Footer -->
+    <!--
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text"><i>&copy; 2016 Your Name</i></p>
+            <button type="button" class="btn btn-default navbar-btn pull-right">
+                Sign in
+            </button>
+        </div>
+    </nav>
+    -->
+    <!-- jquery and bootstrap frameworks -->
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script>
+                        $(function () {
+                            // attach datepicker to textbox
+                            $('#birthday').datepicker({ dateFormat: "mm-dd" });
+                        });
+    </script>
+</body>
+</html>
